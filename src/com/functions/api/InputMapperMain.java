@@ -17,5 +17,15 @@ public class InputMapperMain {
 		});
 		
 		System.out.println(result);
+		
+		result = InputMapper.processString(list,(index,x)->{
+		
+	          if(index%2==0)
+	        	  return x.toUpperCase();
+	          else
+	        	  return x.substring(0, 3).toUpperCase();
+		});
+		
+		System.out.println(result);
 	}
 }
