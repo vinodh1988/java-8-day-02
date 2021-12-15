@@ -13,6 +13,7 @@ public class StreamOperation {
 	    s.forEach(x->{
 	    	System.out.println("Got!!!"+x);
 	    });
+	    
 	    s= list.stream();
 	    System.out.println("------------------------------");
 	    s.forEach(System.out::println);
