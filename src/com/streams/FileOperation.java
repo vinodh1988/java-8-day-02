@@ -20,6 +20,7 @@ public class FileOperation {
 			return x.toUpperCase();}).
 			forEach(x->{
 				System.out.println("Terminal operetation ->"+x);
+				System.out.println("Thread Name"+Thread.currentThread().getName());
 			});
 			
 		} catch (IOException e) {
