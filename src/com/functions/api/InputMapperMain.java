@@ -8,9 +8,7 @@ public class InputMapperMain {
 		List<String> list=Arrays.asList("John","Harry","Raj","Rakesh","Govind","Stepher","Mary");
 		List<String> result;
 		
-		result = InputMapper.processString(list, (x)->{
-			return x.toUpperCase();
-		});
+		result = InputMapper.processString(list, (x)->x.toUpperCase());
 		
 		System.out.println(result);
 		
